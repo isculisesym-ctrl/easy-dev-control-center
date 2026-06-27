@@ -1,0 +1,62 @@
+{
+  "name": "easy-dev-control-center",
+  "version": "0.1.0",
+  "description": "Only I need stop all f*cking apps in my mac 😅",
+  "main": "dist/index.js",
+  "bin": {
+    "easy-dev": "dist/bin/cli.js"
+  },
+  "scripts": {
+    "dev": "ts-node src/bin/cli.ts",
+    "build": "tsc",
+    "start": "node dist/bin/cli.js",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint src --ext .ts",
+    "lint:fix": "eslint src --ext .ts --fix",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "keywords": [
+    "cli",
+    "dev",
+    "mac",
+    "services",
+    "control",
+    "developer-tools"
+  ],
+  "author": "Easy Dev Community",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ulisesym/easy-dev-control-center.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ulisesym/easy-dev-control-center/issues"
+  },
+  "homepage": "https://github.com/ulisesym/easy-dev-control-center#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "cli-table3": "^0.6.3",
+    "ora": "^8.0.1",
+    "plist": "^3.1.0",
+    "yaml": "^2.4.5"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.12",
+    "@types/node": "^20.14.9",
+    "@typescript-eslint/eslint-plugin": "^7.16.0",
+    "@typescript-eslint/parser": "^7.16.0",
+    "eslint": "^9.6.0",
+    "jest": "^29.7.0",
+    "prettier": "^3.3.3",
+    "ts-jest": "^29.1.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

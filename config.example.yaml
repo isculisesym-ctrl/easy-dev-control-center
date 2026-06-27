@@ -1,0 +1,42 @@
+# Easy Dev Control Center Configuration Example
+# Copy this to config.yaml and customize for your environment
+
+services:
+  postgres:
+    enabled: true
+    autoStart: false
+    version: "18"
+    port: 5432
+
+  node:
+    enabled: true
+    version: "22"
+
+  python:
+    enabled: true
+    version: "3.14"
+
+  ollama:
+    enabled: true
+    autoStart: false
+    port: 11434
+    models:
+      - mistral
+      - neural-chat
+
+  git:
+    enabled: true
+    autoStart: true
+
+# Future configuration options
+ui:
+  theme: "dark"
+  language: "en"
+
+logging:
+  level: "info"
+  format: "json"
+
+notifications:
+  enabled: false
+  webhookUrl: ""
