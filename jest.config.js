@@ -12,4 +12,11 @@ module.exports = {
   ],
   coveragePathIgnorePatterns: ['/node_modules/'],
   setupFilesAfterEnv: [],
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  },
+  transformIgnorePatterns: [
+    'node_modules/(?!(chalk|ansi-styles|supports-color|strip-ansi)/)',
+  ],
+  testPathIgnorePatterns: ['/node_modules/', '/dist/'],
 };

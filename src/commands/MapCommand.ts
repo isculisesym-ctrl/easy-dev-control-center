@@ -6,14 +6,7 @@
 import Table from 'cli-table3';
 import chalk from 'chalk';
 import { BaseCommand } from '../core/BaseCommand';
-import {
-  isMacOS,
-  isLinux,
-  getMacOSVersion,
-  commandExists,
-  getVersion,
-  isBrewInstalled,
-} from '../utils/system';
+import { isMacOS, isLinux, getMacOSVersion, commandExists, getVersion } from '../utils/system';
 
 export class MapCommand extends BaseCommand {
   name = 'map';

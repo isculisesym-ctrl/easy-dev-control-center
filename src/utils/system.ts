@@ -2,7 +2,7 @@
  * System utilities for detecting and interacting with system services
  */
 
-import { execSync, spawn, ChildProcess } from 'child_process';
+import { execSync } from 'child_process';
 import { logger } from './logger';
 
 /**

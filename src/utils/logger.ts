@@ -28,7 +28,7 @@ export class Logger {
   private formatMessage(prefix: string, message: string, ...args: unknown[]): string {
     const formatted = format(message, ...args);
     const timestamp = new Date().toISOString().split('T')[1].slice(0, -1);
-    return `${chalk.gray(`[${timestamp}`]} ${prefix} ${formatted}`;
+    return `${chalk.gray(`[${timestamp}]`)} ${prefix} ${formatted}`;
   }
 
   debug(message: string, ...args: unknown[]): void {
